@@ -21,7 +21,7 @@ import {
 import {addLeadingSlash, addTrailingSlash, NATIVE_REQUIRE, removeTrailingSlash} from './util';
 
 const CONFIG_NAME = 'snowpack';
-const ALWAYS_EXCLUDE = ['**/node_modules/**/*', '**/*.d.ts'];
+const ALWAYS_EXCLUDE = ['**/node_modules/**/*', '**/_*.{sass,scss}', '**/*.d.ts'];
 
 // default settings
 const DEFAULT_ROOT = process.cwd();
